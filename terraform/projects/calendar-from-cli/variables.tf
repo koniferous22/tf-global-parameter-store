@@ -27,7 +27,7 @@ variable "calendar_neon_DIRECT_CALENDAR_DATABASE_URL" {
   sensitive   = true
 }
 
-variable "calendar_api_gateway_PARENT_DOMAIN" {
+variable "calendar_route53_PARENT_DOMAIN" {
   description = "Parent domain name for calendar project"
   type        = string
 }

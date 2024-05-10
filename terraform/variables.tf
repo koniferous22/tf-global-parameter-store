@@ -31,11 +31,6 @@ variable "calendar_neon_DIRECT_CALENDAR_DATABASE_URL" {
   sensitive   = true
 }
 
-variable "calendar_api_gateway_PARENT_DOMAIN" {
-  description = "Parent domain name for calendar project"
-  type        = string
-}
-
 variable "calendar_lambda_api_admin_NODE_ENV" {
   description = "NODE_ENV for admin API"
   type        = string
@@ -62,6 +57,22 @@ variable "calendar_lambda_api_public_JWT_SECRET" {
   description = "JWT secret for providing and validating application credentials"
   type        = string
   sensitive   = true
+}
+
+variable "calendar_route53_PARENT_DOMAIN" {
+  description = "Parent domain name for calendar project"
+  type        = string
+}
+
+# ┌─────────────────────┐
+# │                     │
+# │ 'stopwatch' project │
+# │                     │
+# └─────────────────────┘
+
+variable "stopwatch_route53_PARENT_DOMAIN" {
+  description = "Parent domain name for stopwatch project"
+  type        = string
 }
 
 # ┌─────────────────────────────┐

@@ -8,5 +8,6 @@ terraform {
 }
 
 locals {
-  project_name = "calendar"
+  project_name = "stopwatch"
 }
+
